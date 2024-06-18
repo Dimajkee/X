@@ -1,0 +1,61 @@
+Napraviti react applikaciju:
+	- npx create-react-app .           
+
+index.js
+"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+"
+
+app.js
+"
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello World</h1>
+    </div>
+  );
+}
+
+export default App;
+"
+
+start react app:
+	- npm start
+
+
+useState hook: 
+"
+import { useState } from "react";
+
+import "./styles/app.css";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div className="App">
+      <div>
+        <h1>Hello World</h1>
+        <p>Your count is {count}</p>
+        <button onClick={() => setCount((prev) => prev + 1)}>Click</button>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+"
+
+Zadatak: 
+Napraviti Navbar componentu i ubaciti je u app
+Napraviti Hero componentu i ubaciti je u app
