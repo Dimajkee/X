@@ -1,0 +1,35 @@
+.hero {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: 0.5em solid rgb(65, 65, 65);
+  overflow: hidden;
+  z-index: -20;
+}
+
+.hero img {
+  position: absolute;
+  z-index: -10;
+  filter: brightness(0.3);
+  width: 100vw;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.4em;
+  color: #d6d6d6;
+}
